@@ -1,4 +1,3 @@
-
 /*
  * Class for calculating CRC16CITT for byte arrays.
  * @author Tuomas Soikkeli 
@@ -7,7 +6,7 @@ public class CRC16CCITT {
 	
 	public int crc = 0;
 	
-	public void calc_crc(int character) {
+	private void calc_crc(int character) {
 		int crc_tmp;
 		crc_tmp = ((crc ^ character) & 0x0F);
 		crc = (crc >>> 4) ^ (crc_tmp * 4225);
