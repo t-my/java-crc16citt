@@ -4,7 +4,7 @@
  */
 public class CRC16CCITT {
 	
-	public int crc = 0;
+	private int crc = 0;
 	
 	private void calc_crc(int character) {
 		int crc_tmp;
